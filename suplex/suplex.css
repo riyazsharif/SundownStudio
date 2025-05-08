@@ -1,0 +1,452 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    /* background-color:black; */
+    position: relative;
+     z-index: 10;
+}
+#page1{
+   min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0vw  2vw;
+    
+}
+#nav{
+    padding: 2vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;  
+    gap: 1vw; 
+}
+.nav-part2 h4{
+padding: 10px 20px;
+border: 1px solid rgb(140, 136, 136);
+border-radius: 50px;
+font-weight: 500;
+color: black;
+transition: all ease 0.3s;
+position: relative;
+font-size: 18px;
+overflow: hidden;
+
+}
+.nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    background-color: black;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+.nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 50px;
+}
+.nav-part2 h4 a{
+    color: black;
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+}
+.nav-part2 h4:hover a{
+color: #EFEAE3;
+overflow: hidden;
+}
+#center{
+    height: 65vh;
+    width: 100%;
+    /*background-color:orange;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+   padding-bottom: 2.5vw;
+}
+#left h3{
+    width:25vw ;
+    font-size: 1.8vw;
+    line-height: 2vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+#center h1{
+    font-size: 10vw;
+    line-height: 8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:right;
+
+}
+#page1 video{
+    border-radius: 20px;
+    margin-top: 4vw;
+width: 100%;
+position: relative;
+}   
+#hero-shape{
+    position: absolute;
+    height: 36vw;
+    width: 46vw;
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    right: 0;
+    top: 65vh;
+    /* filter:blur(20px) */
+}
+#hero1{
+    height: 100%;
+    width: 100%;
+    background-color:#fe320a; 
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+#hero2{
+    height: 20vw;
+    width: 30vw;
+    background:linear-gradient(#fe320a,#fe3f0a );
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    animation-name: anime1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    filter: blur(15px);
+    position: absolute;
+}
+#hero3{
+    height: 30vw;
+    width: 30vw;
+    background:linear-gradient(#fe320a,#fe3f0a );
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes anime1 {
+    from{
+        transform: translate(55%,-3%);
+    }
+    to{
+        transform: translate(0%,10%);
+    }
+}
+@keyframes anime2 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-20%,10%);
+    }
+}
+@keyframes anime1 {
+    from{
+        transform: translate(55%,-3%);
+    }
+    to{
+        transform: translate(0%,10%);
+    }
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    padding: 8vw 0vw;
+}
+#moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+#moving-text::-webkit-scrollbar{
+    display:none;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#moving-text h1{
+    font-size:8vw;
+    display: inline-block;
+}
+#gola{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color:#fe320a;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+@keyframes move {
+    form{
+transform: translateX(0);
+    }
+to{
+    transform: translateX(-100%);
+}
+}
+
+#page2-bottom{
+    height: 100vh;
+    
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2-bottom h1{
+font-size: 3.5vw;
+
+}
+#bottom-part2 img {
+/* margin-left: 300px; */
+height: 180px;
+width: 250px;
+border-radius: 15px;
+}
+#bottom-part2 p{
+    font-weight: 200;
+    margin-top: 2vw;
+    font-size: 1vw;
+}
+#boss{
+     align-items:right; 
+     justify-content:right; 
+    height: 36vw;
+    width: 46vw;
+     border-radius: 50%; 
+   left:30px; 
+ position:absolute; 
+ bottom: 1vw; 
+ margin-bottom: 1400px;
+}
+
+#bos1{
+    
+    width: 100%;
+    background-color:#fe320a; 
+    filter: blur(20px);
+    position: absolute;
+    border-radius: 50%;
+    animation-name: anime1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+#bos3{
+    height: 30vw;
+    width: 30vw;
+    background:linear-gradient(#fe320a,#fe3f0a );
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+      border-radius: 50%;
+}
+
+#logo{
+    height: 300px;
+    width: 500px;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+   padding: 4vw 0;
+
+}
+.elem{
+    height: 150px;
+    width: 100%;
+    position:relative;
+    border-bottom: 1px solid rgb(143, 132, 132);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0  2vw;
+    
+    
+
+}
+.elem h1{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color:orange;
+    position: absolute;
+    left: 0;
+   top: -100%;
+    transition: all ease 0.3s;
+}
+.elem:hover .overlay{
+    top:0;
+}
+
+#elem-container{
+ 
+}
+
+
+#fixed-image{
+    height:30vw ;
+    width:24vw ;
+    background-color:purple; 
+    border-radius: 10px;
+    position: fixed;
+    z-index:99 ;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position:center;
+}
+
+#page4{
+    height:70vh;
+    width: 100%;
+    background-color:#EFEAE3;
+    padding:8vw 2vw ;
+}
+
+.swiper {
+    width: 60%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 30%;
+  }
+/* 
+   .swiper-slide:nth-child(2n) {
+    width: 40%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 20%;
+  }  */
+
+
+
+
+
+
+
+
+#page5{
+    height:100vh;
+    width: 100%;
+  
+}
+#footer{
+    position: fixed;
+z-index: 9;
+    height:105vh ;
+    width: 100%;
+    bottom: 0;
+    background-color:black;
+    color: white;
+    display:flex;
+    align-items: flex-end;
+
+    flex-direction: column;
+padding: 1vw 3vw;
+}
+#footer h1{
+    font-size:15vw ;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#footer-div{
+    height: 20vh;
+    width: 100%;
+    background-color:red;
+
+}
+#footer-bottom{
+     border-top: 1px solid #dadada;
+     height: 10vh;
+     width: 100%;
+     
+}
+#footer-bottom ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 23px;
+    
+  
+}
+#footerleft h1{
+  font-size:45px; 
+ margin-left: 1300px;
+ display: inline;
+margin-top: 10px;
+
+
+}
+#footerleft {
+    margin-bottom: 200px;
+    margin-right: 150px;
+
+}
+#footerright h1{
+    font-size:25px; 
+   display: inline;
+  margin-top: 10px;
+  font-family:serif;
+  }
+  #email input{
+    color: gray;
+    height: 30px;
+    width: 290px;
+  }
